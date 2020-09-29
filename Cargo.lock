@@ -4371,7 +4371,8 @@ dependencies = [
  "parity-wasm 0.41.0",
  "paste 1.0.0",
  "pretty_assertions",
- "pwasm-utils",
+ "pwasm-utils 0.14.0",
+ "rand 0.7.3",
  "serde",
  "sp-core",
  "sp-io",
@@ -5647,6 +5648,15 @@ dependencies = [
 [[package]]
 name = "pwasm-utils"
 version = "0.14.0"
+dependencies = [
+ "byteorder 1.3.4",
+ "log",
+ "parity-wasm 0.41.0",
+]
+
+[[package]]
+name = "pwasm-utils"
+version = "0.14.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "0f53bc2558e8376358ebdc28301546471d67336584f6438ed4b7c7457a055fd7"
 dependencies = [
@@ -6774,7 +6784,7 @@ dependencies = [
  "log",
  "parity-scale-codec",
  "parity-wasm 0.41.0",
- "pwasm-utils",
+ "pwasm-utils 0.14.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "sc-executor-common",
  "scoped-tls",
  "sp-allocator",
